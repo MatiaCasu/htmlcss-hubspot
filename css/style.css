@@ -9,24 +9,27 @@
 body{
   font-family: 'Montserrat', sans-serif;
   font-size: 13px;
-  font-weight: 500;
+  font-weight: 600;
   background-color: #f4f9fd;
   color: #32495b;
 }
 
 .container{
+  /* background-color: lightgreen; */
   width: 80%;
   margin: auto;
 }
 
 .button{
+
   background-color: #fe775a;
   padding: 10px;
-  border-radius: 10px;
-  border: 1px #fff solid;
+  border-radius: 5px;
   color: #fff;
 }
-
+.big.button{
+  padding: 20px 15px;
+}
 a{
   text-decoration: none;
   color: #32495b;
@@ -56,10 +59,12 @@ i.fa-angle-down{
   padding-right: 10px;
   font-size: 16px;
 }
+
 #search{
   color: #00a4bd;
   text-decoration: none;
 }
+
 .login-left .fa-angle-down{
   border-right: 1px solid #32495b;
 }
@@ -85,5 +90,28 @@ nav > section:last-child{
 .nav-list i{
   margin-left: 10px;
 }
-
 /* /NAV 2 */
+/* HERO */
+.hero{
+  height: 600px;
+  background-image: url(../img/jumbotron.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.hero-text{
+  max-width: 40%;
+  padding: 50px 0;
+
+}
+
+.hero-text > h2{
+  font-size: 40px;
+  margin: 30px 0;
+}
+
+.hero-text * {
+  margin: 40px 0;
+}
+/* /HERO */
