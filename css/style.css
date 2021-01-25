@@ -20,16 +20,18 @@ body{
   margin: auto;
 }
 
-.button{
-
+button{
   background-color: #fe775a;
-  padding: 10px;
+  padding: 5px;
+  border: 1px #fe775a solid;
   border-radius: 5px;
   color: #fff;
 }
-.big.button{
-  padding: 20px 15px;
+
+button.big{
+  padding: 20px 20px;
 }
+
 a{
   text-decoration: none;
   color: #32495b;
@@ -73,8 +75,9 @@ nav > section:last-child{
   text-align: right;
 }
 /* /NAV 1 */
+
 /* NAV 2 */
-.main-nav{
+.background-white{
   background-color: #fff;
 }
 
@@ -91,6 +94,7 @@ nav > section:last-child{
   margin-left: 10px;
 }
 /* /NAV 2 */
+
 /* HERO */
 .hero{
   height: 600px;
@@ -103,7 +107,6 @@ nav > section:last-child{
 .hero-text{
   max-width: 40%;
   padding: 50px 0;
-
 }
 
 .hero-text > h2{
@@ -112,6 +115,6 @@ nav > section:last-child{
 }
 
 .hero-text * {
-  margin: 40px 0;
+  margin: 15px 0;
 }
 /* /HERO */
