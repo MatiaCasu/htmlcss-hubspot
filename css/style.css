@@ -8,28 +8,44 @@
 /* BODY E FISSI */
 body{
   font-family: 'Montserrat', sans-serif;
-  font-size: 13px;
-  font-weight: 600;
-  background-color: #f4f9fd;
   color: #32495b;
+  background-color: #f4f9fd;
+}
+
+.clearfix::after{
+  display: block;
+  content: "";
+  clear: both;
+}
+
+p{
+  font-size: 13px;
+  margin: 20px 0;
+  line-height: 25px;
 }
 
 .container{
-  /* background-color: lightgreen; */
-  width: 80%;
+  width: 75%;
   margin: auto;
 }
 
-button{
+.button{
   background-color: #fe775a;
   padding: 5px;
   border: 1px #fe775a solid;
   border-radius: 5px;
   color: #fff;
+  display: inline-block;
+  min-width: 100px;
+  text-align: center;
 }
 
-button.big{
+.big.button{
   padding: 20px 20px;
+}
+
+li{
+  list-style: none;
 }
 
 a{
@@ -38,6 +54,7 @@ a{
 }
 
 #log-in{
+  min-width: 0;
   background:none;
   color: #fe775a;
   border: 1px #fe775a solid;
@@ -118,3 +135,87 @@ nav > section:last-child{
   margin: 15px 0;
 }
 /* /HERO */
+/* MAIN */
+main{
+  height: 1000px;
+  background-color: #f4f9fd;
+}
+
+main section{
+  margin: 50px 0;
+}
+
+/* SEZIONE 1 */
+.main-title{
+  width: 60%;
+  text-align: center;
+  margin: auto;
+}
+
+.main-title > img{
+  height: 200px;
+  margin-top: 50px;
+}
+
+.main-title > h3{
+  font-size: 20px;
+  margin: 10px 0 20px 0;
+}
+/* /SEZIONE 1 */
+
+/* SEZIONE 2 */
+.main-row1{
+  padding: 50px 80px;
+  box-shadow: 1px 1px 5px grey;
+  background-color: #fff;
+}
+
+.img-button, .row1-text{
+  display: inline-block;
+}
+
+.img-button{
+  height: 200px;
+  width: 20%;
+  float:left;
+}
+
+.img-button > img{
+  height: 80px;
+  margin-bottom: 20px;
+}
+
+.row1-text{
+  float: right;
+  width: calc(79% - 30px);
+  margin-left: 30px;
+}
+
+.row1-text > h4{
+  font-size: 20px;
+}
+
+.row1-text > h5{
+  font-size: 15px;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.row1-text > hr{
+  width: 70%;
+  display: inline-block;
+  vertical-align: super;
+  border: 1px solid  #32495b;
+  margin-left: 30px;
+}
+
+.row1-text li{
+  display: inline-block;
+}
+
+.row1-text i.fa-check-circle{
+  margin: 0 20px;
+  color: #fe775a;
+}
+/* /SEZIONE 2 */
+/* /MAIN */
