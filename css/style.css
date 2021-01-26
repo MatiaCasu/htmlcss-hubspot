@@ -9,7 +9,7 @@
 body{
   font-family: 'Montserrat', sans-serif;
   color: #32495b;
-  background-color: #f4f9fd;
+  font-size: 15px;
 }
 
 .clearfix::after{
@@ -27,6 +27,7 @@ p{
 .container{
   width: 75%;
   margin: auto;
+  /* background-color: lightblue; */
 }
 
 .button{
@@ -63,6 +64,18 @@ a{
 i.fa-check-circle{
 color: #fe775a;
 }
+
+.background{
+background-color: #f4f9fd;
+}
+
+.background.blue{
+  background-image: linear-gradient(to left, #00bba7, #00a4bb);
+}
+
+.background.white{
+  background-color: #fff;
+}
 /* /BODY E FISSI */
 
 /* NAV 1 */
@@ -73,8 +86,11 @@ nav > section{
 }
 
 nav li{
-  margin: 15px 10px 15px 0;
   display:inline-block;
+}
+
+nav li:nth-child(even){
+  margin: 0 15px;
 }
 
 i.fa-angle-down{
@@ -97,10 +113,6 @@ nav > section:last-child{
 /* /NAV 1 */
 
 /* NAV 2 */
-.background-white{
-  background-color: #fff;
-}
-
 .logo{
   width: 20%;
   vertical-align: middle;
@@ -139,12 +151,11 @@ nav > section:last-child{
 
 .hero-text{
   max-width: 40%;
-  padding: 50px 0;
+  padding: 30px 0;
 }
 
 .hero-text > h2{
   font-size: 40px;
-  margin: 30px 0;
 }
 
 .hero-text * {
@@ -153,12 +164,13 @@ nav > section:last-child{
 /* /HERO */
 /* MAIN */
 main{
-  height: 1000px;
   background-color: #f4f9fd;
 }
 
 main section{
-  margin: 50px 0;
+  margin: 20px 0;
+  padding: 20px 0;
+  /* background-color: orange; */
 }
 
 /* INTERLINEA TITOLO */
@@ -228,14 +240,14 @@ main section{
   display: inline-block;
 }
 
-.row1-text i.fa-check-circle, .row1-text li{
+.row1-text .fa-check-circle, .row1-text li{
   margin: 0 20px 0 0;
 }
 /* /SEZIONE RIGA 1 */
 /* SEZIONE RIGA 2 */
 .box-row2{
   background-color: #fff;
-  width: calc(100% / 3 - 18px);
+  width: calc(100% / 3 - 17px);
   box-shadow: 1px 1px 5px grey;
   text-align: center;
   padding: 15px;
@@ -262,4 +274,35 @@ main section{
   margin: 20px 0;
 }
 /* /SEZIONE RIGA 2 */
+
+/* SEZIONE RIGA 3 CON GRIGLIA */
+.grid{
+  text-align: center;
+  color: #fff;
+}
+
+.grid h3{
+  font-size: 25px;
+}
+
+.grid-table{
+  padding: 0 0 50px 0;
+}
+
+.grid-cell{
+  width: calc(100% / 4 - 1px);
+  padding: 20px 0;
+  float: left;
+  border-left: 1px solid #fff;
+}
+
+.grid-cell:nth-of-type(1n+5){
+  border-top: 1px solid #fff;
+}
+
+.grid-cell:nth-of-type(4n+1){
+  border-left: 0;
+}
+/* /SEZIONE RIGA 3 CON GRIGLIA */
+
 /* /MAIN */
