@@ -60,6 +60,9 @@ a{
   border: 1px #fe775a solid;
 }
 
+i.fa-check-circle{
+color: #fe775a;
+}
 /* /BODY E FISSI */
 
 /* NAV 1 */
@@ -158,9 +161,8 @@ main section{
   margin: 50px 0;
 }
 
-/* SEZIONE 1 */
+/* INTERLINEA TITOLO */
 .main-title{
-  width: 60%;
   text-align: center;
   margin: auto;
 }
@@ -174,9 +176,9 @@ main section{
   font-size: 20px;
   margin: 10px 0 20px 0;
 }
-/* /SEZIONE 1 */
+/* /INTERLINEA TITOLO */
 
-/* SEZIONE 2 */
+/* SEZIONE RIGA 1 */
 .main-row1{
   padding: 50px 80px;
   box-shadow: 1px 1px 5px grey;
@@ -217,7 +219,7 @@ main section{
 .row1-text > hr{
   width: 70%;
   display: inline-block;
-  vertical-align: super;
+  vertical-align: middle;
   border: 1px solid  #32495b;
   margin-left: 30px;
 }
@@ -228,7 +230,36 @@ main section{
 
 .row1-text i.fa-check-circle, .row1-text li{
   margin: 0 20px 0 0;
-  color: #fe775a;
 }
-/* /SEZIONE 2 */
+/* /SEZIONE RIGA 1 */
+/* SEZIONE RIGA 2 */
+.box-row2{
+  background-color: #fff;
+  width: calc(100% / 3 - 18px);
+  box-shadow: 1px 1px 5px grey;
+  text-align: center;
+  padding: 15px;
+  display: inline-block;
+}
+.box-row2:nth-child(even){
+  margin: 0 20px;
+}
+.box-row2 img{
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+.box-row2 hr{
+  width: 90%;
+  margin: auto;
+}
+
+.box-row2 li{
+  text-align: left;
+}
+
+.box-row2 h5, .box-row2 .big.button{
+  margin: 20px 0;
+}
+/* /SEZIONE RIGA 2 */
 /* /MAIN */
