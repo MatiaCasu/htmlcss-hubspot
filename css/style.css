@@ -17,19 +17,28 @@ body{
   content: "";
   clear: both;
 }
-
-p{
-  font-size: 13px;
-  margin: 20px 0;
-  line-height: 25px;
-}
-
 .container{
   width: 75%;
-  margin: auto;
+  margin: 0 auto;
   /* background-color: lightblue; */
 }
 
+.background.lightgrey{
+background-color: #f4f9fd;
+}
+
+.background.blue{
+  background-image: linear-gradient(to left, #00bba7, #00a4bb);
+}
+
+.background.white{
+  background-color: #fff;
+}
+
+.background.darkblue{
+  background-color: #32495b;
+}
+/* #dadee0 */
 .button{
   background-color: #fe775a;
   padding: 5px;
@@ -45,6 +54,25 @@ p{
   padding: 20px 20px;
 }
 
+#log-in{
+  min-width: 0;
+  background:none;
+  color: #fe775a;
+  border: 1px #fe775a solid;
+}
+
+p{
+  font-size: 13px;
+  margin: 20px 0;
+  line-height: 25px;
+}
+
+h3{
+  font-size: 25px;
+  font-weight: 700;
+  margin: 20px 0;
+}
+
 li{
   list-style: none;
 }
@@ -54,28 +82,12 @@ a{
   color: #32495b;
 }
 
-#log-in{
-  min-width: 0;
-  background:none;
-  color: #fe775a;
-  border: 1px #fe775a solid;
-}
 
 i.fa-check-circle{
 color: #fe775a;
 }
 
-.background{
-background-color: #f4f9fd;
-}
 
-.background.blue{
-  background-image: linear-gradient(to left, #00bba7, #00a4bb);
-}
-
-.background.white{
-  background-color: #fff;
-}
 /* /BODY E FISSI */
 
 /* NAV 1 */
@@ -163,13 +175,8 @@ nav > section:last-child{
 }
 /* /HERO */
 /* MAIN */
-main{
-  background-color: #f4f9fd;
-}
-
 main section{
-  margin: 20px 0;
-  padding: 20px 0;
+  padding: 30px 0;
   /* background-color: orange; */
 }
 
@@ -185,7 +192,6 @@ main section{
 }
 
 .main-title > h3{
-  font-size: 20px;
   margin: 10px 0 20px 0;
 }
 /* /INTERLINEA TITOLO */
@@ -244,6 +250,7 @@ main section{
   margin: 0 20px 0 0;
 }
 /* /SEZIONE RIGA 1 */
+
 /* SEZIONE RIGA 2 */
 .box-row2{
   background-color: #fff;
@@ -253,9 +260,11 @@ main section{
   padding: 15px;
   display: inline-block;
 }
+
 .box-row2:nth-child(even){
   margin: 0 20px;
 }
+
 .box-row2 img{
   width: 100px;
   margin-bottom: 20px;
@@ -281,10 +290,6 @@ main section{
   color: #fff;
 }
 
-.grid h3{
-  font-size: 25px;
-}
-
 .grid-table{
   padding: 0 0 50px 0;
 }
@@ -304,5 +309,44 @@ main section{
   border-left: 0;
 }
 /* /SEZIONE RIGA 3 CON GRIGLIA */
+
+/* RIGA 4 CON SFONDO BIANCO  */
+.customers-number{
+  margin: 0 25px;
+  width: 20%;
+  float: left;
+}
+
+.customers-logo{
+  width: 50%;
+  float: right;
+  text-align: right;
+}
+
+.customers-logo img{
+  max-width: calc(100% / 4 - 15px);
+  max-height: 30px;
+  margin-left: 15px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.customers-text{
+  width: 50%;
+  float: left;
+}
+
+.customers-area-img{
+  width: 50%;
+  height: ;
+  float:right;
+}
+
+.customers-area-img img{
+  vertical-align: text-bottom;
+  height: 300px;
+  float: right;
+}
+/* /RIGA 4 CON SFONDO BIANCO  */
 
 /* /MAIN */
