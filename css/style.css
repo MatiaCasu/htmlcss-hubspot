@@ -190,10 +190,6 @@ nav select + ul{
   border: solid #33475b;
   border-width: 3px 0;
 }
-/* SISTEMARE BOTTOM DEL BACKGROUND HERO!!!!
-RAGGRUPPARE CLASSI
-SISTEMARE MARGINI E PADDING!!!!
-AGGIUNGERE NOME ALT ALLE IMMAGINI!!!!*/
 
 .hero-text{
   max-width: 50%;
