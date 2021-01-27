@@ -17,12 +17,13 @@ body{
   content: "";
   clear: both;
 }
+
 .container{
-  width: 75%;
+  max-width: 1100px;
   margin: 0 auto;
-  /* background-color: lightblue; */
 }
 
+/* BACKGROUND CLASSI*/
 .background.lightgrey{
 background-color: #f4f9fd;
 }
@@ -38,7 +39,9 @@ background-color: #f4f9fd;
 .background.darkblue{
   background-color: #32495b;
 }
-/* #dadee0 */
+/* /BACKGROUND CLASSI*/
+
+/* BOTTONI */
 .button{
   background-color: #fe775a;
   padding: 5px;
@@ -61,6 +64,15 @@ background-color: #f4f9fd;
   border: 1px #fe775a solid;
 }
 
+#contact-us{
+  background-color: #dadee0;
+  color: #32495b;
+  border: 1px #dadee0 solid;
+}
+
+/* /BOTTONI */
+
+/* Proprietà ripetute FONT */
 p{
   font-size: 13px;
   margin: 20px 0;
@@ -82,13 +94,10 @@ a{
   color: #32495b;
 }
 
-
 i.fa-check-circle{
 color: #fe775a;
 }
-
-
-/* /BODY E FISSI */
+/* /Proprietà ripetute FONT */
 
 /* NAV 1 */
 nav > section{
@@ -141,17 +150,20 @@ nav > section:last-child{
 
 /* HERO */
 .hero{
-  height: 550px;
-  background-image: url(../img/jumbotron.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: bottom right;
+  height: 425px;
   background-color: #fff4ef;
   position: relative;
 }
 
+.hero > .container{
+  background-image: url(../img/jumbotron.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+
 .background-bottom{
-  height: 66px;
+  height: 51px;
   width: 100%;
   position: absolute;
   bottom: 0;
@@ -160,6 +172,10 @@ nav > section:last-child{
   border: solid #33475b;
   border-width: 3px 0;
 }
+/* SISTEMARE BOTTOM DEL BACKGROUND HERO!!!!
+RAGGRUPPARE CLASSI
+SISTEMARE MARGINI E PADDING!!!!
+AGGIUNGERE NOME ALT ALLE IMMAGINI!!!!*/
 
 .hero-text{
   max-width: 40%;
@@ -170,17 +186,17 @@ nav > section:last-child{
   font-size: 40px;
 }
 
-.hero-text * {
+.hero-text *{
   margin: 15px 0;
 }
 /* /HERO */
+
 /* MAIN */
 main section{
   padding: 30px 0;
-  /* background-color: orange; */
 }
 
-/* INTERLINEA TITOLO */
+/* INTERLINEA MAIN TITOLO */
 .main-title{
   text-align: center;
   margin: auto;
@@ -261,12 +277,12 @@ main section{
   display: inline-block;
 }
 
-.box-row2:nth-child(even){
+.box-row2:nth-child(2n){
   margin: 0 20px;
 }
 
 .box-row2 img{
-  width: 100px;
+  max-height: 100px;
   margin-bottom: 20px;
 }
 
@@ -325,9 +341,8 @@ main section{
 
 .customers-logo img{
   max-width: calc(100% / 4 - 15px);
-  max-height: 30px;
+  max-height: 20px;
   margin-left: 15px;
-  display: inline-block;
   vertical-align: middle;
 }
 
@@ -336,17 +351,100 @@ main section{
   float: left;
 }
 
-.customers-area-img{
+.customers-img{
   width: 50%;
   height: ;
   float:right;
 }
 
-.customers-area-img img{
+.customers-img img{
   vertical-align: text-bottom;
   height: 300px;
   float: right;
 }
 /* /RIGA 4 CON SFONDO BIANCO  */
-
 /* /MAIN */
+
+/* FOOTER */
+footer{
+  font-size: 14px;
+  padding: 30px 0;
+}
+
+footer *{
+  color: #dadee0;
+}
+
+.foot-link > li:first-child{
+  color: #dadee0;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.foot-link a{
+  color: #dadee0;
+  line-height: 25px;
+}
+
+.foot-link{
+  float: left;
+  margin-right: 40px;
+}
+
+.foot-link a.button{
+  margin: 20px 0;
+}
+
+.foot-contact{
+  float: right;
+}
+
+.contact-link > li{
+  display: inline-block;
+  color: #dadee0;
+}
+
+.contact-link i{
+  color: #dadee0;
+  margin-right: 25px;
+}
+
+.languages{
+  width: 100%;
+  text-align: center;
+  float: left;
+  margin-top: 80px;
+}
+
+.languages > li{
+  display: inline-block;
+  margin: 0 15px;
+}
+
+footer hr{
+  border-style: 1px solid #dadee0;
+  float: left;
+  width: 100%;
+  margin: 30px 0;
+}
+
+.logo-copyright{
+  float: left;
+}
+
+.logo-copyright > small{
+  display: block;
+}
+
+.bottom-link{
+  float:right;
+}
+
+.bottom-link li{
+  display: inline-block;
+}
+
+.bottom-link:first-child a{
+  padding-right: 30px;
+  border: 1px solid pink;
+}
