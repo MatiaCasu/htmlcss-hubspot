@@ -2,6 +2,7 @@
   margin: 0;
   padding:0;
   box-sizing: border-box;
+  /* border: 1px green solid; */
 }
 /* RESET */
 
@@ -10,6 +11,7 @@ body{
   font-family: 'Montserrat', sans-serif;
   color: #32495b;
   font-size: 15px;
+  font-weight: 500;
 }
 
 .clearfix::after{
@@ -19,7 +21,7 @@ body{
 }
 
 .container{
-  max-width: 1100px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
@@ -28,12 +30,12 @@ body{
 background-color: #f4f9fd;
 }
 
-.background.blue{
-  background-image: linear-gradient(to left, #00bba7, #00a4bb);
-}
-
 .background.white{
   background-color: #fff;
+}
+
+.background.blue{
+  background-image: linear-gradient(to left, #00bba7, #00a4bb);
 }
 
 .background.darkblue{
@@ -41,50 +43,7 @@ background-color: #f4f9fd;
 }
 /* /BACKGROUND CLASSI*/
 
-/* BOTTONI */
-.button{
-  background-color: #fe775a;
-  padding: 5px;
-  border: 1px #fe775a solid;
-  border-radius: 5px;
-  color: #fff;
-  display: inline-block;
-  min-width: 100px;
-  text-align: center;
-}
-
-.big.button{
-  padding: 20px 20px;
-}
-
-#log-in{
-  min-width: 0;
-  background:none;
-  color: #fe775a;
-  border: 1px #fe775a solid;
-}
-
-#contact-us{
-  background-color: #dadee0;
-  color: #32495b;
-  border: 1px #dadee0 solid;
-}
-
-/* /BOTTONI */
-
-/* Proprietà ripetute FONT */
-p{
-  font-size: 13px;
-  margin: 20px 0;
-  line-height: 25px;
-}
-
-h3{
-  font-size: 25px;
-  font-weight: 700;
-  margin: 20px 0;
-}
-
+/* Stili, FONT AWSOME e BOTTONI*/
 li{
   list-style: none;
 }
@@ -94,29 +53,86 @@ a{
   color: #32495b;
 }
 
-i.fa-check-circle{
+.fa-check-circle{
 color: #fe775a;
 }
-/* /Proprietà ripetute FONT */
+
+.button{
+  background-color: #fe775a;
+  padding: 10px;
+  border: 1px #fe775a solid;
+  border-radius: 5px;
+  color: #fff;
+  display: inline-block;
+  margin: 5px 0;
+}
+
+.big.button{
+  padding: 20px;
+}
+
+#log-in{
+  background:none;
+  color: #fe775a;
+}
+
+#contact-us{
+  background-color: #dadee0;
+  color: #32495b;
+  border: #dadee0;
+}
+/* /Stili, FONT AWSOME e BOTTONI*/
+
+/* FONT */
+p{
+  font-size: 13px;
+  margin: 15px 0;
+  line-height: 25px;
+}
+
+h2, h3, h4, h5, h6{
+  font-weight: 800;
+  margin: 20px 0;
+}
+
+h2{
+  font-size: 40px;
+}
+
+h3{
+  font-size: 25px;
+}
+
+h4{
+  font-size: 20px;
+}
+
+h5{
+  font-size: 15px;
+}
+
+h6{
+  font-size: 12px;
+}
+/* /FONT */
+/* /BODY E FISSI */
 
 /* NAV 1 */
 nav > section{
   margin: 10px 0;
-  width: 49%;
+  width: calc(50% - 3px);
+}
+
+nav section, nav > section *{
   display:inline-block;
 }
 
-nav li{
-  display:inline-block;
+nav > section:last-child{
+  text-align: right;
 }
 
-nav li:nth-child(even){
-  margin: 0 15px;
-}
-
-i.fa-angle-down{
-  padding-right: 10px;
-  font-size: 16px;
+nav li:not(nav li:last-child){
+  margin-right: 20px;
 }
 
 #search{
@@ -124,12 +140,16 @@ i.fa-angle-down{
   text-decoration: none;
 }
 
-.login-left .fa-angle-down{
-  border-right: 1px solid #32495b;
+nav select {
+  margin-right: 20px;
+  border-style: none;
+  background: none;
+  color: #32495b;
 }
 
-nav > section:last-child{
-  text-align: right;
+nav select + ul{
+  border-left: 1px solid #32495b;
+  padding-left: 20px;
 }
 /* /NAV 1 */
 
@@ -150,20 +170,18 @@ nav > section:last-child{
 
 /* HERO */
 .hero{
-  height: 425px;
+  height: 550px;
   background-color: #fff4ef;
   position: relative;
-}
-
-.hero > .container{
   background-image: url(../img/jumbotron.png);
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: bottom right;
+  background-position: right bottom;
+  padding: 20px 0;
 }
 
 .background-bottom{
-  height: 51px;
+  height: 66px;
   width: 100%;
   position: absolute;
   bottom: 0;
@@ -178,126 +196,91 @@ SISTEMARE MARGINI E PADDING!!!!
 AGGIUNGERE NOME ALT ALLE IMMAGINI!!!!*/
 
 .hero-text{
-  max-width: 40%;
-  padding: 30px 0;
-}
-
-.hero-text > h2{
-  font-size: 40px;
-}
-
-.hero-text *{
-  margin: 15px 0;
+  max-width: 50%;
 }
 /* /HERO */
 
 /* MAIN */
 main section{
-  padding: 30px 0;
+  padding: 50px 0;
 }
 
 /* INTERLINEA MAIN TITOLO */
 .main-title{
   text-align: center;
-  margin: auto;
 }
 
 .main-title > img{
   height: 200px;
-  margin-top: 50px;
-}
-
-.main-title > h3{
-  margin: 10px 0 20px 0;
 }
 /* /INTERLINEA TITOLO */
 
 /* SEZIONE RIGA 1 */
-.main-row1{
-  padding: 50px 80px;
-  box-shadow: 1px 1px 5px grey;
+.box{
   background-color: #fff;
+  box-shadow: 1px 1px 5px lightgrey;
+  padding: 30px;
 }
 
-.img-button, .row1-text{
+.box img{
+  max-height: 100px;
+}
+
+.img-button, .row1-text, .row1-text > h5, .row1-text li{
   display: inline-block;
 }
 
 .img-button{
-  width: 20%;
+  width: 30%;
   float:left;
   text-align: center;
 }
 
-.img-button > img{
-  width: 100px;
-  margin-bottom: 20px;
-}
-
 .row1-text{
   float: right;
-  width: calc(79% - 30px);
-  margin-left: 30px;
-}
-
-.row1-text > h4{
-  font-size: 20px;
-}
-
-.row1-text > h5{
-  font-size: 15px;
-  display: inline-block;
-  margin-bottom: 20px;
+  width: 70%;
 }
 
 .row1-text > hr{
-  width: 70%;
+  width: 60%;
   display: inline-block;
   vertical-align: middle;
-  border: 1px solid  #32495b;
-  margin-left: 30px;
+  margin-left: 50px;
 }
-
 .row1-text li{
-  display: inline-block;
+  margin-right: 20px;
+}
+.box i{
+  margin-right: 10px;
 }
 
-.row1-text .fa-check-circle, .row1-text li{
-  margin: 0 20px 0 0;
-}
 /* /SEZIONE RIGA 1 */
 
 /* SEZIONE RIGA 2 */
-.box-row2{
-  background-color: #fff;
-  width: calc(100% / 3 - 17px);
-  box-shadow: 1px 1px 5px grey;
+.box.row2{
+  width: calc( ( 100% - 40px ) / 3);
   text-align: center;
-  padding: 15px;
-  display: inline-block;
+  margin: 20px 0;
+  float: left;
 }
 
-.box-row2:nth-child(2n){
-  margin: 0 20px;
+.box.row2:not(:last-child){
+  margin-right: 20px;
 }
 
-.box-row2 img{
-  max-height: 100px;
-  margin-bottom: 20px;
-}
-
-.box-row2 hr{
+.box.row2 hr{
   width: 90%;
-  margin: auto;
+  margin: 30px auto;
 }
 
-.box-row2 li{
+.box.row2 li{
   text-align: left;
 }
 
-.box-row2 h5, .box-row2 .big.button{
-  margin: 20px 0;
+.box.row2 ul{
+  margin-bottom: 20px;
 }
+
 /* /SEZIONE RIGA 2 */
 
 /* SEZIONE RIGA 3 CON GRIGLIA */
@@ -307,7 +290,7 @@ main section{
 }
 
 .grid-table{
-  padding: 0 0 50px 0;
+  margin: 30px 0;
 }
 
 .grid-cell{
@@ -324,51 +307,72 @@ main section{
 .grid-cell:nth-of-type(4n+1){
   border-left: 0;
 }
+
+.grid-cell > img{
+  height: 30px;
+}
+
+.h5-number{
+  font-size: 30px;
+  font-weight: 700;
+}
+.grid .h5-number::after{
+  content: " +";
+  vertical-align: middle;
+  font-size: 20px;
+  font-weight: 400;
+}
 /* /SEZIONE RIGA 3 CON GRIGLIA */
 
 /* RIGA 4 CON SFONDO BIANCO  */
-.customers-number{
-  margin: 0 25px;
-  width: 20%;
+.customers-area.top{
+  width: 90%;
+  margin: 0 auto;
+}
+
+.customers-area > *:first-child{
   float: left;
 }
 
-.customers-logo{
-  width: 50%;
+.customers-area > *:last-child{
   float: right;
+}
+
+.customers-number{
+  width: 40%;
+}
+
+.customers-number > h5{
+  margin: 0;
+}
+
+.customers-logo{
+  width: 60%;
   text-align: right;
 }
 
 .customers-logo img{
-  max-width: calc(100% / 4 - 15px);
-  max-height: 20px;
-  margin-left: 15px;
+  max-width: calc( ( 100% - 15px ) / 4 );
+  max-height: 25px;
+  padding-left: 15px;
   vertical-align: middle;
 }
 
 .customers-text{
-  width: 50%;
+  width: 45%;
   float: left;
 }
 
 .customers-img{
-  width: 50%;
-  height: ;
-  float:right;
-}
-
-.customers-img img{
-  vertical-align: text-bottom;
-  height: 300px;
-  float: right;
+  height: 250px;
 }
 /* /RIGA 4 CON SFONDO BIANCO  */
 /* /MAIN */
 
 /* FOOTER */
 footer{
-  font-size: 14px;
   padding: 30px 0;
+  font-size: 14px;
 }
 
 footer *{
@@ -376,13 +380,11 @@ footer *{
 }
 
 .foot-link > li:first-child{
-  color: #dadee0;
   font-weight: 700;
   margin-bottom: 10px;
 }
 
 .foot-link a{
-  color: #dadee0;
   line-height: 25px;
 }
 
@@ -401,12 +403,10 @@ footer *{
 
 .contact-link > li{
   display: inline-block;
-  color: #dadee0;
 }
 
 .contact-link i{
-  color: #dadee0;
-  margin-right: 25px;
+  margin-right: 30px;
 }
 
 .languages{

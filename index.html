@@ -5,7 +5,7 @@
     <title>Hubspot</title>
     <!-- FONT -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <!-- /FONT -->
     <!-- FONT AWSOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
@@ -16,31 +16,33 @@
     <header>
       <!-- NAV LOGIN -->
       <div class="background lightgrey">
-        <nav class="container">
+        <nav class="container clearfix">
           <section class="login-left">
-            <ul>
-              <li>
-                <i class="fas fa-globe-europe"></i>
+            <i class="fas fa-globe-europe"></i>
+            <select class="nav-languages" name="">
+              <option value="">
                 English
-                <i class="fas fa-angle-down"></i>
-              </li>
+              </option>
+            </select>
+            <ul>
               <li>
                 <a href="#">Contact Us</a>
               </li>
             </ul>
           </section>
           <section class="login-right">
-          <ul>
-            <li>
-              <a id="search" href="#"><i class="fas fa-search"></i></a>
-            </li>
-            <li>
-              <a class="button" id="log-in" href="#">Log In</a>
-            </li>
-            <li>
-              <a class="button" href="#">GetHubspotFree</a>
-            </li>
-          </ul>
+            <ul>
+              <li>
+                <a id="search" href="#"><i class="fas fa-search"></i></a>
+              </li>
+              <li>
+                <a class="button" id="log-in" href="#">Log In</a>
+              </li>
+              <li>
+                <a class="button" href="#">GetHubspotFree</a>
+              </li>
+            </ul>
+          </section>
         </nav>
       </div>
       <!-- /NAV LOGIN -->
@@ -99,7 +101,7 @@
           </section>
           <!-- /INTERLINEA "TITOLO" MAIN -->
           <!-- RIGA 1 -->
-          <section class="main-row1 clearfix">
+          <section class="box row1 clearfix">
             <div class="img-button">
               <img src="img/CRM-Illustration.svg" alt="">
               <a class="big button" href="#">Learn more</a>
@@ -127,9 +129,9 @@
           </section>
           <!-- /RIGA 1 -->
           <!-- RIGA 2 CON 3 COLONNE -->
-          <section>
+          <div class="clearfix">
             <!-- COLONNA 1 -->
-            <div class="box-row2">
+            <section class="box row2">
               <img src="img/Marketing-Hub-Free.svg" alt="">
               <h4>Marketing Hub</h4>
               <p>Marketing software to help you grow traffic, convert more visitors and run complete inbound marketing campaigns at scale</p>
@@ -147,10 +149,10 @@
                 </li>
               </ul>
               <a class="big button" href="#">Learn more</a>
-            </div>
+            </section>
             <!-- /COLONNA 1 -->
             <!-- COLONNA 2 -->
-            <div class="box-row2">
+            <section class="box row2">
               <img src="img/Sales-Professional-Illustration.svg" alt="">
               <h4>Marketing Hub</h4>
               <p>Marketing software to help you grow traffic, convert more visitors and run complete inbound marketing campaigns at scale</p>
@@ -168,10 +170,10 @@
                 </li>
               </ul>
               <a class="big button" href="#">Learn more</a>
-            </div>
+            </section>
             <!-- /COLONNA 2 -->
             <!-- COLONNA 3 -->
-            <div class="box-row2">
+            <section class="box row2">
               <img src="img/Service-Hub-Illustration.svg" alt="">
               <h4>Marketing Hub</h4>
               <p>Marketing software to help you grow traffic, convert more visitors and run complete inbound marketing campaigns at scale</p>
@@ -189,105 +191,103 @@
                 </li>
               </ul>
               <a class="big button" href="#">Learn more</a>
-            </div>
+            </section>
             <!-- /COLONNA 3 -->
-          </section>
+          </div>
           <!-- /RIGA 2 CON 3 COLONNE-->
         </div>
-        <!-- RIGA 3 CON GRIGLIA -->
-        <div class="background blue">
-          <div class="grid container">
-            <section class="grid-text">
-              <h3>Learn and grow with award-winning support and a thriving community behind you</h3>
-              <p>You don't have to go it alone. Master the inbound methology and get the most out of your tools with Hubspot's legendary customer support team and a community of thousand of marketing and sales pros just like you.</p>
-            </section>
-            <section class="grid-table clearfix">
-              <!-- RIGA 1 CELLE -->
-              <div class="grid-cell">
-                <img src="img/homepage_community_agency.svg" alt="">
-                <h3>150+</h3>
-                <h6><small>HubSpot user groups</small></h6>
-              </div>
-              <div class="grid-cell">
-                <img src="img/homepage_community_blog.svg" alt="">
-                <h3>4.5M+</h3>
-                <h6><small>montly visits</small></h6>
-              </div>
-              <div class="grid-cell">
-                  <img src="img/homepage_community_academy.svg" alt="">
-                <h3>155K+</h3>
-                <h6><small>certified professionals</small></h6>
-              </div>
-              <div class="grid-cell">
-                <img src="img/homepage_community_inbound.svg" alt="">
-                <h3>21K+</h3>
-                <h6><small>registered attendees</small></h6>
-              </div>
-              <!-- /RIGA 1 CELLE -->
-              <!-- RIGA 2 CELLE -->
-              <div class="grid-cell">
-                <img src="img/homepage_community_connect.svg" alt="">
-                <h3>200+</h3>
-                <h6><small>Integrations</small></h6>
-              </div>
-              <div class="grid-cell">
-                <img src="img/homepage_community_globe.svg" alt="">
-                <h3>6+</h3>
-                <h6><small>Languages</small></h6>
-              </div>
-              <div class="grid-cell">
-                <img src="img/homepage_community_followers.svg" alt="">
-                <h3>2.6M+</h3>
-                <h6><small>Social followers</small></h6>
-              </div>
-              <div class="grid-cell">
-                <img src="img/growthhub-white-small-1.svg" alt="">
-                <h3>5K+</h3>
-                <h6><small>profiles and counting</small></h6>
-              </div>
-              <!-- /RIGA 2 CELLE -->
-            </section>
-          </div>
-        </div>
-        <!-- /RIGA 3 CON GRIGLIA -->
-        <!-- RIGA 4 CON SFONDO BIANCO -->
-        <div class="background white">
-          <div class="container">
-            <section class="customers-area clearfix">
-              <div class="customers-number">
-                <h3>64,500</h3>
-                <p>customers in over 100 sountries growing their business with Hubspot</p>
-              </div>
-              <div class="customers-logo">
-                <!-- LOGO 1/4 -->
-                  <img src="img/Atlassian-horizontal-blue@2x.png" alt="">
-                  <img src="img/doordash_owler_20181011_194113_original@2x.png" alt="">
-                  <img src="img/g2crowd-logo@2x.png" alt="">
-                  <img src="img/purple-logo@2x.webp" alt="">
-                <!-- /LOGO 1/4 -->
-                <!-- LOGO 5/8 -->
-                  <img src="img/Subaru_Logo_v2_186x63@2x.webp" alt="">
-                  <img src="img/Wistia_logo@2x.webp" alt="">
-                  <img src="img/Classpass-logo@2x.webp" alt="">
-                  <img src="img/VMware_logo_gry_RGB_300dpi@2x.webp" alt="">
-                <!-- /LOGO 5/8 -->
-              </div>
-            </section>
-            <section class="customers-area clearfix">
-              <div class="customers-text">
-                <h3>Start Growing With HubSpot Today</h3>
-                <p>With tools to make evert part of your process more human and a support team excited to help you, getting started with inbounds has never been easier.</p>
-                <a class="big button" href="#">GetHubspotFree</a>
-                <p><small>Get started with free tools or get more with our premium software</small></p>
-              </div>
-              <div class="customers-img">
-                <img src="img/woman.webp" alt="">
-              </div>
-            </section>
-          </div>
-        </div>
-        <!-- /RIGA 4 CON SFONDO BIANCO -->
       </div>
+      <!-- RIGA 3 CON GRIGLIA -->
+      <div class="background blue">
+        <section class="grid container">
+          <div class="grid-text">
+            <h3>Learn and grow with award-winning support and a thriving community behind you</h3>
+            <p>You don't have to go it alone. Master the inbound methology and get the most out of your tools with Hubspot's legendary customer support team and a community of thousand of marketing and sales pros just like you.</p>
+          </div>
+          <div class="grid-table clearfix">
+            <!-- RIGA 1 CELLE -->
+            <div class="grid-cell">
+              <img src="img/homepage_community_agency.svg" alt="">
+              <h5 class="h5-number">150</h5>
+              <h6><small>HubSpot user groups</small></h6>
+            </div>
+            <div class="grid-cell">
+              <img src="img/homepage_community_blog.svg" alt="">
+              <h5 class="h5-number">4.5M</h5>
+              <h6><small>montly visits</small></h6>
+            </div>
+            <div class="grid-cell">
+                <img src="img/homepage_community_academy.svg" alt="">
+              <h5 class="h5-number">155K</h5>
+              <h6><small>certified professionals</small></h6>
+            </div>
+            <div class="grid-cell">
+              <img src="img/homepage_community_inbound.svg" alt="">
+              <h5 class="h5-number">21K</h5>
+              <h6><small>registered attendees</small></h6>
+            </div>
+            <!-- /RIGA 1 CELLE -->
+            <!-- RIGA 2 CELLE -->
+            <div class="grid-cell">
+              <img src="img/homepage_community_connect.svg" alt="">
+              <h5 class="h5-number">200</h5>
+              <h6><small>Integrations</small></h6>
+            </div>
+            <div class="grid-cell">
+              <img src="img/homepage_community_globe.svg" alt="">
+              <h5 class="h5-number">6</h5>
+              <h6><small>Languages</small></h6>
+            </div>
+            <div class="grid-cell">
+              <img src="img/homepage_community_followers.svg" alt="">
+              <h5 class="h5-number">2.6M</h5>
+              <h6><small>Social followers</small></h6>
+            </div>
+            <div class="grid-cell">
+              <img src="img/growthhub-white-small-1.svg" alt="">
+              <h5 class="h5-number">5K</h5>
+              <h6><small>profiles and counting</small></h6>
+            </div>
+            <!-- /RIGA 2 CELLE -->
+          </div>
+        </section>
+      </div>
+      <!-- /RIGA 3 CON GRIGLIA -->
+      <!-- RIGA 4 CON SFONDO BIANCO -->
+      <div class="background white">
+        <section class="container">
+          <div class="customers-area top clearfix">
+            <div class="customers-number">
+              <h5 class="h5-number">64,500</h5>
+              <p>customers in over 100 sountries growing their business with Hubspot</p>
+            </div>
+            <div class="customers-logo">
+              <!-- LOGO 1/4 -->
+                <img src="img/Atlassian-horizontal-blue@2x.png" alt="">
+                <img src="img/doordash_owler_20181011_194113_original@2x.png" alt="">
+                <img src="img/g2crowd-logo@2x.png" alt="">
+                <img src="img/purple-logo@2x.webp" alt="">
+              <!-- /LOGO 1/4 -->
+              <!-- LOGO 5/8 -->
+                <img src="img/Subaru_Logo_v2_186x63@2x.webp" alt="">
+                <img src="img/Wistia_logo@2x.webp" alt="">
+                <img src="img/Classpass-logo@2x.webp" alt="">
+                <img src="img/VMware_logo_gry_RGB_300dpi@2x.webp" alt="">
+              <!-- /LOGO 5/8 -->
+            </div>
+          </div>
+          <div class="customers-area clearfix">
+            <div class="customers-text">
+              <h3>Start Growing With HubSpot Today</h3>
+              <p>With tools to make evert part of your process more human and a support team excited to help you, getting started with inbounds has never been easier.</p>
+              <a class="big button" href="#">GetHubspotFree</a>
+              <p><small>Get started with free tools or get more with our premium software</small></p>
+            </div>
+            <img class="customers-img" src="img/woman.webp" alt="">
+          </div>
+        </section>
+      </div>
+      <!-- /RIGA 4 CON SFONDO BIANCO -->
     </main>
     <footer class="background darkblue">
       <div class="container clearfix">
