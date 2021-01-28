@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding:0;
   box-sizing: border-box;
@@ -131,7 +131,7 @@ nav > section:last-child{
   text-align: right;
 }
 
-nav li:not(nav li:last-child){
+nav li:not( nav li:last-child ){
   margin-right: 20px;
 }
 
@@ -174,7 +174,7 @@ nav select + ul{
   background-color: #fff4ef;
   position: relative;
   background-image: url(../img/jumbotron.png);
-  background-size: contain;
+  background-size: auto 100%;
   background-repeat: no-repeat;
   background-position: right bottom;
   padding: 20px 0;
@@ -203,7 +203,9 @@ main section{
 
 /* INTERLINEA MAIN TITOLO */
 .main-title{
+  width: 80%;
   text-align: center;
+  padding-bottom: 30px;
 }
 
 .main-title > img{
@@ -254,14 +256,14 @@ main section{
 
 /* SEZIONE RIGA 2 */
 .box.row2{
-  width: calc( ( 100% - 40px ) / 3);
+  width: calc( ( 100% - 60px ) / 3);
   text-align: center;
-  margin: 20px 0;
+  margin: 30px 0;
   float: left;
 }
 
 .box.row2:not(:last-child){
-  margin-right: 20px;
+  margin-right: 30px;
 }
 
 .box.row2 hr{
@@ -418,7 +420,6 @@ footer *{
 }
 
 footer hr{
-  border-style: 1px solid #dadee0;
   float: left;
   width: 100%;
   margin: 30px 0;
@@ -440,7 +441,6 @@ footer hr{
   display: inline-block;
 }
 
-.bottom-link:first-child a{
+.bottom-link li:first-child{
   padding-right: 30px;
-  border: 1px solid pink;
 }
